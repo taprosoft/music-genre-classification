@@ -8,7 +8,7 @@ max_width = 10337 ### maximum raw spectrogram width
 split_count = 10  ### number of slices per song
 
 epochs = 100
-batch_size = 64
+batch_size = 32
 spectrogram_features = ['h', 'p']   ### Percussive & harmonic component spectrogram
 
 CLASSES = ['Cai Luong', 'Cach Mang', 'Dan Ca - Que Huong', 'Dance', 'Khong Loi',
@@ -22,7 +22,7 @@ parser.add_argument("--spectr_dir", type=str, default="data/spectr/train", help=
 
 parser.add_argument("--model", type=str, default="resnet18",
                     choices=["resnet18", "resnet34", "CRNN", "simpleCNN"], help='model type')
-parser.add_argument("--checkpoint", type=str, default='music_genre_cnn.h5', help='path to checkpoint')
+parser.add_argument("--checkpoint", type=str, default='music_genre_cnnit .h5', help='path to checkpoint')
 
 parser.add_argument('--evaluate', action='store_true', help='evaluate trained model with validation data')
 parser.add_argument('--use_cache', action='store_true', help='use cached .npy data from disk')
