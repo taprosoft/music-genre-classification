@@ -93,5 +93,5 @@ if __name__ == "__main__":
     dir_name = os.path.dirname(args.input)
 
     write_label_csv(song_names[train_inds], labels[train_inds], os.path.join(dir_name, 'train_set.csv'))
-    write_label_csv(song_names[test_inds], labels[test_inds], os.path.join('val_set.csv'))
+    write_label_csv(song_names[test_inds], labels[test_inds], os.path.join(dir_name, 'val_set.csv'))
 

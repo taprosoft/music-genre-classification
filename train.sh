@@ -1,1 +1,1 @@
-python src/train.py --train_csv='data/train_set.csv' --val_csv='data/val_set.csv' --spectr_dir='data/train' --model='resnet18'
+python src/train.py --train_csv='data/train_set.csv' --val_csv='data/val_set.csv' --spectr_dir='spectr/train' --model='resnet18'

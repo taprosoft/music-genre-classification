@@ -90,7 +90,7 @@ def predict_from_folder_spectr(spectr_folder, data_folder, output_file):
         im_paths = [[join(spectr_folder, song_base+'_h.png'), join(spectr_folder, song_base+'_p.png')]]
         print(im_paths)
         x_arr = load_images(im_paths)
-        print(x_arr.shape)
+        # print(x_arr.shape)
 
         y_proba = model.predict(x_arr)
         res = get_class_from_proba(y_proba)
