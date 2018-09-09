@@ -80,7 +80,7 @@ def predict_from_folder_spectr(spectr_folder, data_folder, output_file):
     # spectr_folder = '/tmp/spectr/'
     songs = [s for s in listdir(data_folder) if s.endswith(".mp3")]
 
-    model = load_model('/models/music_genre_cnn.h5')
+    model = load_model('/model/music_genre_cnn.h5')
 
     N = len(songs)
     for i, song in enumerate(songs):
