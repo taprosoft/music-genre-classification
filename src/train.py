@@ -92,7 +92,7 @@ def train_model(spectr_dir, train_csv, test_csv, model_type, use_cache = False, 
 
     input_shape = (rows, cols, channels)
 
-    from .model import ResnetBuilder, CRNN, simple_CNN
+    from model import ResnetBuilder, CRNN, simple_CNN
 
     if model_type == "resnet18":
         model = ResnetBuilder.build_resnet_18(input_shape, num_classes)
